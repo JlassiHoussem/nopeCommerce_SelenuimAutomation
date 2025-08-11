@@ -32,14 +32,18 @@ public class UserRegistrationPage extends PageBase {
 	@FindBy(id="register-button")
 	WebElement  registrBtn;
 	
+	@FindBy(css="div.result")
+	public WebElement successMessage;
+			
+	
 	public void userRegistration(String firstName,String lastName,String email,String password) {
-		genderRdoBtn.click();
+		clickButton(genderRdoBtn);
 		fnTxtBox.sendKeys(firstName);
-		lnTxtBox.sendKeys(lastName);
-		emailTxtBox.sendKeys(email);
-		passwordTxtBox.sendKeys(password);
-		confirmPasswordTxtBox.sendKeys(password);
-		registrBtn.click();
+		setTextElementText(fnTxtBox, firstName);
+		setTextElementText(lnTxtBox, lastName);
+		setTextElementText(passwordTxtBox, password);
+		setTextElementText(confirmPasswordTxtBox, password);
+		clickButton(registrBtn);
 	}
 	
 

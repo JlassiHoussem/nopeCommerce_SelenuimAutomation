@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
@@ -15,8 +16,8 @@ public class UserRegistrationTest extends TestBase{
 		homeObject =new HomePage(driver);
 		homeObject.openRegistrationPage();
 		registernObject = new UserRegistrationPage(driver);
-		registernObject.userRegistration("Houssem", "Jlassi", "testemail@gmail.com", "123456788");
-		
+		registernObject.userRegistration("Houssem", "Jlassi", "testemail123@gmail.com", "123456788");
+		Assert.assertTrue(registernObject.successMessage.getText().contains("Your registration completed"));
 		
 	}
 

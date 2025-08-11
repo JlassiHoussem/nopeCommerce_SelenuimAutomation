@@ -15,6 +15,6 @@ public class HomePage extends PageBase {
     WebElement registerLink;
 	
 	public void openRegistrationPage() {
-		registerLink.click();
+		clickButton(registerLink);
 	}
 }
