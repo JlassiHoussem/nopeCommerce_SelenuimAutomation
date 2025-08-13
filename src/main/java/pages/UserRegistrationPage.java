@@ -34,6 +34,15 @@ public class UserRegistrationPage extends PageBase {
 	
 	@FindBy(css="div.result")
 	public WebElement successMessage;
+	
+	@FindBy(linkText = "Log out")
+	public WebElement logoutLink;
+	
+	@FindBy(linkText = "My account")
+	WebElement myAccountLink;
+	
+	@FindBy(className ="cb-i")
+	public WebElement captchaBtn;
 			
 	
 	public void userRegistration(String firstName,String lastName,String email,String password) {
@@ -44,7 +53,15 @@ public class UserRegistrationPage extends PageBase {
 		setTextElementText(passwordTxtBox, password);
 		setTextElementText(confirmPasswordTxtBox, password);
 		clickButton(registrBtn);
+		 
 	}
 	
+	public void userLogout() {
+		clickButton(logoutLink);
+	}
+	
+	public void openMyAccountPage() {
+		clickButton(myAccountLink);
+	}
 
 }
