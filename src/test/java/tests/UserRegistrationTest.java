@@ -19,7 +19,7 @@ public class UserRegistrationTest extends TestBase{
 		homeObject =new HomePage(driver);
 		homeObject.openRegistrationPage();
 		registernObject = new UserRegistrationPage(driver);
-		registernObject.userRegistration("Houssem", "Jlassi", "testemail44@gmail.com", "1234567889");
+		registernObject.userRegistration("Houssem", "Jlassi", "testemail4@gmail.com", "1234567889");
 		System.out.println("Please solve the CAPTCHA manually...");
 		try {
 			Thread.sleep(100);
