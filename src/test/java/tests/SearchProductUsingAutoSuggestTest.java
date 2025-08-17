@@ -8,7 +8,7 @@ import pages.SearchPage;
 
 public class SearchProductUsingAutoSuggestTest extends TestBase
 {
-	String productName = "Apple MacBook Pro 13-inch"; 
+	String productName = "Apple MacBook Pro"; 
 	SearchPage searchObject ; 
 	ProductDetailsPage detailsObject ; 
 	

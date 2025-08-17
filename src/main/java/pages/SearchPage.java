@@ -6,11 +6,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class SearchPage extends PageBase{
-
+public class SearchPage extends PageBase 
+{
 	public SearchPage(WebDriver driver) {
 		super(driver);
- 	}
+	}
+
 	@FindBy(id="small-searchterms")
 	WebElement searchTextBox ; 
 
@@ -20,19 +21,21 @@ public class SearchPage extends PageBase{
 	@FindBy(id="ui-id-1")
 	List<WebElement> ProductList ; 
 
-	@FindBy(linkText="Apple MacBook Pro 13-inch")
+	@FindBy(linkText="Apple MacBook Pro")
 	WebElement productTitle; 
 
 	public void ProductSearch(String productName) 
 	{
 		setTextElementText(searchTextBox, productName);
-		clickButton(searchBtn);
+		searchTextBox.click();
 	}
-
+	 
 	public void OpenProductDetailsPage() 
 	{
-		clickButton(productTitle);
+		//clickButton(productTitle);
+		productTitle.click();
 	}
+	
 
 	public void ProductSearchUsingAutoSuggest(String searchTxt) 
 	{

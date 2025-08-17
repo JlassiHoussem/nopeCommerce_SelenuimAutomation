@@ -4,64 +4,61 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class UserRegistrationPage extends PageBase {
-
+public class UserRegistrationPage extends PageBase 
+{
 	public UserRegistrationPage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
 	}
 	
 	@FindBy(id="gender-male")
-	WebElement genderRdoBtn;
+	WebElement genderRdoBtn ; 
 	
 	@FindBy(id="FirstName")
-	WebElement fnTxtBox;
+	WebElement fnTxtBox; 
 	
 	@FindBy(id="LastName")
-	WebElement lnTxtBox;
+	WebElement lnTxtBox ; 
 	
 	@FindBy(id="Email")
-	WebElement emailTxtBox;
+	WebElement emailTxtBox ; 
 	
 	@FindBy(id="Password")
-	WebElement passwordTxtBox;
+	WebElement passwordTxtBox ; 
 	
 	@FindBy(id="ConfirmPassword")
-	WebElement confirmPasswordTxtBox;
+	WebElement confirmPasswordTxtBox ; 
 	
 	@FindBy(id="register-button")
-	WebElement  registrBtn;
+	WebElement registerBtn ; 
 	
 	@FindBy(css="div.result")
-	public WebElement successMessage;
+	public WebElement successMessage ; 
 	
-	@FindBy(linkText = "Log out")
-	public WebElement logoutLink;
+	@FindBy(linkText="Log out")
+	public WebElement logoutLink; 
 	
-	@FindBy(linkText = "My account")
-	WebElement myAccountLink;
+	@FindBy(linkText="My account")
+	WebElement myAccountLink; 
 	
-	@FindBy(className ="cb-i")
-	public WebElement captchaBtn;
-			
-	
-	public void userRegistration(String firstName,String lastName,String email,String password) {
+	public void userRegistration(String firstName , String lastName , String email , String password) 
+	{
 		clickButton(genderRdoBtn);
-		fnTxtBox.sendKeys(firstName);
 		setTextElementText(fnTxtBox, firstName);
 		setTextElementText(lnTxtBox, lastName);
+		setTextElementText(emailTxtBox, email);
 		setTextElementText(passwordTxtBox, password);
 		setTextElementText(confirmPasswordTxtBox, password);
-		clickButton(registrBtn);
-		 
+		clickButton(registerBtn);
 	}
 	
-	public void userLogout() {
+	public void userLogout() 
+	{
 		clickButton(logoutLink);
 	}
 	
-	public void openMyAccountPage() {
+	public void openMyAccountPage() 
+	{
 		clickButton(myAccountLink);
 	}
-
+	
 }

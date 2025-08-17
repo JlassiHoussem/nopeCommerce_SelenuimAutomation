@@ -23,7 +23,7 @@ public class MyAccountPage extends PageBase {
     @FindBy(id = "ConfirmNewPassword")
     WebElement confirmPasswordTxt;
     
-    @FindBy(css = "input.button-1.change-password-button")
+    @FindBy(linkText= "Change password")
     WebElement ChangePasswordBtn;
     
     @FindBy(css = "div.result")
@@ -38,7 +38,8 @@ public class MyAccountPage extends PageBase {
         setTextElementText(oldPasswordTxt, oldpassword);
         setTextElementText(newPasswordTxt, newpassword);
         setTextElementText(confirmPasswordTxt, newpassword);
-        clickButton(ChangePasswordBtn);
+        //clickButton(ChangePasswordBtn);
+        ChangePasswordBtn.click();
     }
 
 	
