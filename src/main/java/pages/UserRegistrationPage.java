@@ -53,12 +53,14 @@ public class UserRegistrationPage extends PageBase
 	
 	public void userLogout() 
 	{
-		clickButton(logoutLink);
+		//clickButton(logoutLink);
+		logoutLink.click();
 	}
 	
 	public void openMyAccountPage() 
 	{
-		clickButton(myAccountLink);
+		//clickButton(myAccountLink);
+		myAccountLink.click();
 	}
 	
 }
