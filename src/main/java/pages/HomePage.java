@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
 public class HomePage extends PageBase
@@ -13,7 +14,10 @@ public class HomePage extends PageBase
 		super(driver);
 		jse = (JavascriptExecutor) driver; 
 		action = new Actions(driver); 
+		
 	}
+
+ 
 	
 	@FindBy(linkText="Register")
 	WebElement registerLink ; 
@@ -47,7 +51,7 @@ public class HomePage extends PageBase
 	public void openContactUsPage() 
 	
 	{
-		scrolToBottom();
+		scrollToBottom();
 		clickButton(contactUsLink);
 	}
 	
@@ -57,16 +61,28 @@ public class HomePage extends PageBase
 		select.selectByVisibleText("Euro");
 	}
 	
-	public void selectNotebooksMenu() 
-	{
-		action
-		.moveToElement(ComputerMenu)
-		.moveToElement(NotbooksMenu)
-		.click()
-		.build()
-		.perform();
-		
-	}
-	
+	public void selectNotebooksMenu() {
+	    // Hover over Computers menu
+	    action.moveToElement(ComputerMenu).perform();
 
+	    // Wait until Notebooks submenu is visible & clickable
+	    wait.until(ExpectedConditions.elementToBeClickable(NotbooksMenu));
+
+	    // Hover & click Notebooks
+	    action.moveToElement(NotbooksMenu).click().perform();
+	    
+	}
+
+	/*
+	public void selectNotebooksMenu() {
+	    // Hover over Computers menu
+	    action.moveToElement(ComputerMenu).perform();
+
+	    // Wait until Notebooks submenu is visible & clickable
+	    wait.until(ExpectedConditions.elementToBeClickable(NotbooksMenu));
+
+	    // Hover & click Notebooks
+	    action.moveToElement(NotbooksMenu).click().perform();
+	}
+*/
 }

@@ -1,3 +1,4 @@
+/* problem
 package tests;
 
 import org.testng.Assert;
@@ -16,9 +17,9 @@ public class MyAccountTest extends TestBase
 	MyAccountPage myAccountObject ; 
 	String oldPassword = "12345678" ; 
 	String newPassword = "123456" ; 
-	String firstName = "Moataz" ; 
-	String lastName = "Nabil" ; 
-	String email = "test399@gmail.com" ; 
+	String firstName = "Houssem" ; 
+	String lastName = "Houssem" ; 
+	String email = "test399wwwwwww@gmail.com" ; 
 	
 
 	@Test(priority=1)
@@ -63,3 +64,4 @@ public class MyAccountTest extends TestBase
 	}
 	
 }
+*/

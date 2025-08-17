@@ -11,7 +11,7 @@ public class ChangeCurrencyTest extends TestBase
 {
 	HomePage homeObject ; 
 	ProductDetailsPage detailsObject ; 
-	String productName = "Apple MacBook Pro 13-inch"; 
+	String productName = "Apple MacBook Pro"; 
 	SearchPage searchObject ; 
 
 	@Test(priority=1)
