@@ -7,7 +7,7 @@
 			<class name="tests.UserRegistrationTestWithJavaFaker" />
 			<class name="tests.ProductHoverMenuTest" />
 			<class name="tests.SearchProductTest" />
-			<class name="tests.AddProductToShoppingCartTest" />
+			<class name="tests.ContactUsTest" />
 			 
 		</classes>
 	</test>
