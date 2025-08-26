@@ -3,6 +3,8 @@ package tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.github.javafaker.Faker;
+
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
@@ -16,8 +18,11 @@ public class ContactUsTest extends TestBase
 	HomePage home;
 	ContactUsPage contactPage;
 
-	String email = "test@test.com";
-	String fullName = "Test User";
+	Faker fakeData = new Faker(); 
+	 
+	String fullName= fakeData.name().fullName();
+	String email = fakeData.internet().emailAddress(); 
+	String password = fakeData.number().digits(8).toString(); 
 	String enquiry = "Hello Admin , this is for test";
 
 	@Test
