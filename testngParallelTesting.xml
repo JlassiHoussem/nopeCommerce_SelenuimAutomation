@@ -2,7 +2,7 @@
 <suite name="Regression Suite" parallel="tests" thread-count="2">
 	
 	<test name="Edge Regression Test"  >
-	<parameter name="browser" value="edge" />
+	<parameter name="browser" value="firefox" />
 		<classes>
 			 
 			<class name="tests.UserRegistrationParallelTesting" />
