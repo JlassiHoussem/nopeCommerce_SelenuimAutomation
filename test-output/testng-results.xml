@@ -1,364 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="6" failed="1" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-26T18:03:48 WAT" name="Regression Suite" finished-at="2025-08-26T18:05:09 WAT" duration-ms="80497">
+  <suite started-at="2025-08-26T19:22:01 WAT" name="Default suite" finished-at="2025-08-26T19:22:03 WAT" duration-ms="1306">
     <groups>
     </groups>
-    <test started-at="2025-08-26T18:03:48 WAT" name="Regression Test" finished-at="2025-08-26T18:05:09 WAT" duration-ms="80497">
-      <class name="tests.UserRegistrationTestWithJavaFaker">
-        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.UserRegistrationTestWithJavaFaker@3021e31]" started-at="2025-08-26T18:03:46 WAT" name="startDriver" finished-at="2025-08-26T18:03:48 WAT" duration-ms="2378" status="PASS">
+    <test started-at="2025-08-26T19:22:01 WAT" name="Default test" finished-at="2025-08-26T19:22:03 WAT" duration-ms="1306">
+      <class name="tests.ContactUsTest">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.ContactUsTest@3b45a3e6]" started-at="2025-08-26T19:21:57 WAT" name="startDriver" finished-at="2025-08-26T19:22:01 WAT" duration-ms="3955" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="UserCanRegisterSuccssfully()[pri:1, instance:tests.UserRegistrationTestWithJavaFaker@3021e31]" started-at="2025-08-26T18:03:52 WAT" name="UserCanRegisterSuccssfully" finished-at="2025-08-26T18:03:53 WAT" duration-ms="1272" status="PASS">
+        <test-method signature="UserCanUseContactUs()[pri:0, instance:tests.ContactUsTest@3b45a3e6]" started-at="2025-08-26T19:22:01 WAT" name="UserCanUseContactUs" finished-at="2025-08-26T19:22:02 WAT" duration-ms="1223" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserCanRegisterSuccssfully -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.UserRegistrationTestWithJavaFaker@3021e31]" started-at="2025-08-26T18:03:53 WAT" name="screenshotOnFailure" finished-at="2025-08-26T18:03:53 WAT" duration-ms="0" status="PASS">
+        </test-method> <!-- UserCanUseContactUs -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ContactUsTest@3b45a3e6]" started-at="2025-08-26T19:22:03 WAT" name="screenshotOnFailure" finished-at="2025-08-26T19:22:03 WAT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserCanRegisterSuccssfully status=SUCCESS method=UserRegistrationTestWithJavaFaker.UserCanRegisterSuccssfully()[pri:1, instance:tests.UserRegistrationTestWithJavaFaker@3021e31] output={null}]]]>
+                <![CDATA[[TestResult name=UserCanUseContactUs status=SUCCESS method=ContactUsTest.UserCanUseContactUs()[pri:0, instance:tests.ContactUsTest@3b45a3e6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="RegisteredUserCanLogout()[pri:0, instance:tests.UserRegistrationTestWithJavaFaker@3021e31]" started-at="2025-08-26T18:03:53 WAT" name="RegisteredUserCanLogout" finished-at="2025-08-26T18:03:54 WAT" depends-on-methods="tests.UserRegistrationTestWithJavaFaker.UserCanRegisterSuccssfully" duration-ms="697" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RegisteredUserCanLogout -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.UserRegistrationTestWithJavaFaker@3021e31]" started-at="2025-08-26T18:03:54 WAT" name="screenshotOnFailure" finished-at="2025-08-26T18:03:54 WAT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=RegisteredUserCanLogout status=SUCCESS method=UserRegistrationTestWithJavaFaker.RegisteredUserCanLogout()[pri:0, instance:tests.UserRegistrationTestWithJavaFaker@3021e31] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="RegisteredUserCanLogin()[pri:0, instance:tests.UserRegistrationTestWithJavaFaker@3021e31]" started-at="2025-08-26T18:03:54 WAT" name="RegisteredUserCanLogin" finished-at="2025-08-26T18:03:56 WAT" depends-on-methods="tests.UserRegistrationTestWithJavaFaker.RegisteredUserCanLogout" duration-ms="1353" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RegisteredUserCanLogin -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.UserRegistrationTestWithJavaFaker@3021e31]" started-at="2025-08-26T18:03:56 WAT" name="screenshotOnFailure" finished-at="2025-08-26T18:03:56 WAT" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=RegisteredUserCanLogin status=SUCCESS method=UserRegistrationTestWithJavaFaker.RegisteredUserCanLogin()[pri:0, instance:tests.UserRegistrationTestWithJavaFaker@3021e31] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshotOnFailure -->
-        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.UserRegistrationTestWithJavaFaker@3021e31]" started-at="2025-08-26T18:05:09 WAT" name="stopDriver" finished-at="2025-08-26T18:05:09 WAT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.ContactUsTest@3b45a3e6]" started-at="2025-08-26T19:22:03 WAT" name="stopDriver" finished-at="2025-08-26T19:22:03 WAT" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
-      </class> <!-- tests.UserRegistrationTestWithJavaFaker -->
-      <class name="tests.SearchProductTest">
-        <test-method signature="UserCanSearchForProducts()[pri:0, instance:tests.SearchProductTest@17adbecf]" started-at="2025-08-26T18:03:50 WAT" name="UserCanSearchForProducts" finished-at="2025-08-26T18:03:51 WAT" duration-ms="995" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserCanSearchForProducts -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.SearchProductTest@17adbecf]" started-at="2025-08-26T18:03:51 WAT" name="screenshotOnFailure" finished-at="2025-08-26T18:03:51 WAT" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=UserCanSearchForProducts status=SUCCESS method=SearchProductTest.UserCanSearchForProducts()[pri:0, instance:tests.SearchProductTest@17adbecf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshotOnFailure -->
-      </class> <!-- tests.SearchProductTest -->
-      <class name="tests.ProductHoverMenuTest">
-        <test-method signature="UserCanSelectSubCategoryFromMainMenu()[pri:0, instance:tests.ProductHoverMenuTest@49318c2a]" started-at="2025-08-26T18:03:48 WAT" name="UserCanSelectSubCategoryFromMainMenu" finished-at="2025-08-26T18:03:50 WAT" duration-ms="1076" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserCanSelectSubCategoryFromMainMenu -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ProductHoverMenuTest@49318c2a]" started-at="2025-08-26T18:03:50 WAT" name="screenshotOnFailure" finished-at="2025-08-26T18:03:50 WAT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=UserCanSelectSubCategoryFromMainMenu status=SUCCESS method=ProductHoverMenuTest.UserCanSelectSubCategoryFromMainMenu()[pri:0, instance:tests.ProductHoverMenuTest@49318c2a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshotOnFailure -->
-      </class> <!-- tests.ProductHoverMenuTest -->
-      <class name="tests.AddProductToShoppingCartTest">
-        <test-method signature="UserCanSearchForProductsWithAutoSuggest()[pri:1, instance:tests.AddProductToShoppingCartTest@59eb987a]" started-at="2025-08-26T18:03:51 WAT" name="UserCanSearchForProductsWithAutoSuggest" finished-at="2025-08-26T18:03:52 WAT" duration-ms="1542" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserCanSearchForProductsWithAutoSuggest -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AddProductToShoppingCartTest@59eb987a]" started-at="2025-08-26T18:03:52 WAT" name="screenshotOnFailure" finished-at="2025-08-26T18:03:52 WAT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=UserCanSearchForProductsWithAutoSuggest status=SUCCESS method=AddProductToShoppingCartTest.UserCanSearchForProductsWithAutoSuggest()[pri:1, instance:tests.AddProductToShoppingCartTest@59eb987a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="UserCanAddProductToShoppingCart()[pri:2, instance:tests.AddProductToShoppingCartTest@59eb987a]" started-at="2025-08-26T18:03:56 WAT" name="UserCanAddProductToShoppingCart" finished-at="2025-08-26T18:05:09 WAT" duration-ms="73359" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id: session deleted as the browser has closed the connection
-from disconnected: unable to send message to renderer
-  (Session info: chrome=139.0.7258.128)
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2d76b038cd04820f04893c3a2e3fbc45, findElement {value=add-to-cart-button-4, using=id}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 138.0.7204.185 (1a058aeb041..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51419}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51419/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2d76b038cd04820f04893c3a2e3fbc45]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: unable to send message to renderer
-  (Session info: chrome=139.0.7258.128)
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2d76b038cd04820f04893c3a2e3fbc45, findElement {value=add-to-cart-button-4, using=id}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 138.0.7204.185 (1a058aeb041..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51419}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51419/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2d76b038cd04820f04893c3a2e3fbc45
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-at pages.PageBase.clickButton(PageBase.java:29)
-at pages.ProductDetailsPage.AddToCart(ProductDetailsPage.java:56)
-at tests.AddProductToShoppingCartTest.UserCanAddProductToShoppingCart(AddProductToShoppingCartTest.java:28)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserCanAddProductToShoppingCart -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AddProductToShoppingCartTest@59eb987a]" started-at="2025-08-26T18:05:09 WAT" name="screenshotOnFailure" finished-at="2025-08-26T18:05:09 WAT" duration-ms="71" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=UserCanAddProductToShoppingCart status=FAILURE method=AddProductToShoppingCartTest.UserCanAddProductToShoppingCart()[pri:2, instance:tests.AddProductToShoppingCartTest@59eb987a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2d76b038cd04820f04893c3a2e3fbc45, screenshot {}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 138.0.7204.185 (1a058aeb041..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51419}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51419/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2d76b038cd04820f04893c3a2e3fbc45]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2d76b038cd04820f04893c3a2e3fbc45, screenshot {}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 138.0.7204.185 (1a058aeb041..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51419}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51419/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2d76b038cd04820f04893c3a2e3fbc45
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:333)
-at utilities.Helper.captureScreenshot(Helper.java:23)
-at tests.TestBase.screenshotOnFailure(TestBase.java:93)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="UserCanRemoveProductFromCart()[pri:3, instance:tests.AddProductToShoppingCartTest@59eb987a]" started-at="2025-08-26T18:05:09 WAT" name="UserCanRemoveProductFromCart" finished-at="2025-08-26T18:05:09 WAT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2d76b038cd04820f04893c3a2e3fbc45, screenshot {}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 138.0.7204.185 (1a058aeb041..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51419}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51419/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2d76b038cd04820f04893c3a2e3fbc45]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2d76b038cd04820f04893c3a2e3fbc45, screenshot {}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 138.0.7204.185 (1a058aeb041..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51419}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51419/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2d76b038cd04820f04893c3a2e3fbc45
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:333)
-at utilities.Helper.captureScreenshot(Helper.java:23)
-at tests.TestBase.screenshotOnFailure(TestBase.java:93)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserCanRemoveProductFromCart -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AddProductToShoppingCartTest@59eb987a]" started-at="2025-08-26T18:05:09 WAT" name="screenshotOnFailure" finished-at="2025-08-26T18:05:09 WAT" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshotOnFailure -->
-      </class> <!-- tests.AddProductToShoppingCartTest -->
-    </test> <!-- Regression Test -->
-  </suite> <!-- Regression Suite -->
+      </class> <!-- tests.ContactUsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
