@@ -1,4 +1,4 @@
-/*
+
 package tests;
 
 import org.testng.Assert;
@@ -51,4 +51,4 @@ public class AddProductToCompareTest extends TestBase
 		Assert.assertTrue(compareObject.noDataLbl.getText().contains("You have no items to compare."));
 	}
 }
-*/
+

@@ -4,9 +4,10 @@
 	<test name="Regression Test" preserve-order="false">
 		<classes>
 			 
-		<class name="tests.UserRegistrationTestWithJavaFaker" />
-			<class name="tests.ProductHoverMenuTest" />
-			 
+ 		 
+ 			<class name="tests.ContactUsTest" />
+		 
+ 			 
 		</classes>
 	</test>
 </suite> 
